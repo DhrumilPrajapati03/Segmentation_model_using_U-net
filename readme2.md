@@ -89,6 +89,48 @@ plt.show()
 These scripts should work if your files exist and match the expected format. If you still get black images or errors, share your exact filenames or the issue, and I’ll tweak further!
 
 
+Absolutely, yes — as a space researcher working with Earth observation data like the Onera Satellite Change Detection (OSCD) dataset, I’m quite familiar with its structure. Since you've downloaded it from IEEE DataPort, you likely have the dataset organized as follows:
+
+---
+
+### 🗂️ **Main Structure of the OSCD Dataset**
+You’ll typically find **3 key folders** and **3 key text files**:
+
+---
+
+### 🔹 1. **Images Folder**
+Contains 24 subfolders — each corresponding to a **city** (like "abidjan", "belo_horizonte", etc.).
+
+Each city folder contains:
+
+- `imgs_1/`: Sentinel-2 image **before** the change.
+- `imgs_2/`: Sentinel-2 image **after** the change.
+- `pair/`: RGB visualizations of before/after side by side.
+- `imgs_1_rect/` and `imgs_2_rect/`: Geometrically aligned (registered) versions of the above.
+- `.geojson` and `.txt`: Metadata and coordinates.
+
+---
+
+### 🔹 2. **Train Labels Folder**
+Contains 14 city subfolders (for training), each with a `cm/` folder that has:
+- `change mask images` (as `.png` or `.tif`) indicating where change has occurred (white = change, black = no change).
+
+---
+
+### 🔹 3. **Test Labels Folder**
+Same structure as train labels, but for the 10 testing cities.
+
+---
+
+### 📄 Key Text Files in the Root:
+- `all.txt`: Lists all 24 city folder names.
+- `train.txt`: Lists the 14 training cities.
+- `test.txt`: Lists the 10 testing cities.
+
+---
+
+### Summary:
+```
 OSCD/
 ├── images/
 │   ├── abidjan/
@@ -108,4 +150,9 @@ OSCD/
 ├── all.txt
 ├── train.txt
 └── test.txt
+```
+
+---
+
+Let me know what part you're working on — like preprocessing, training, or inference — and I’ll guide you like we’re preparing a satellite mission ✨🛰️
 
