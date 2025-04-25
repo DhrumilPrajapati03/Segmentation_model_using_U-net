@@ -87,3 +87,25 @@ plt.show()
 - **Dependencies:** Requires `rasterio`, `numpy`, and `matplotlib`.
 
 These scripts should work if your files exist and match the expected format. If you still get black images or errors, share your exact filenames or the issue, and I’ll tweak further!
+
+
+OSCD/
+├── images/
+│   ├── abidjan/
+│   │   ├── imgs_1/
+│   │   ├── imgs_2/
+│   │   ├── imgs_1_rect/
+│   │   ├── imgs_2_rect/
+│   │   └── pair/
+├── train_labels/
+│   ├── abidjan/
+│   │   └── cm/
+│   │       └── change_mask.png
+├── test_labels/
+│   ├── bangkok/
+│   │   └── cm/
+│   │       └── change_mask.png
+├── all.txt
+├── train.txt
+└── test.txt
+
