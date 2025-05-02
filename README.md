@@ -70,7 +70,6 @@ All data were acquired from the **Sentinel-2** Earth observation mission, part o
 | ---------------------- | ------------------ | ---------------------- |
 | ![RGB](path/to/image1) | ![GT](path/to/gt1) | ![Pred](path/to/pred1) |
 
-> *Note: Add image paths or upload examples to visualize results.*
 
 ---
 
@@ -93,8 +92,6 @@ git clone https://github.com/DhrumilPrajapati03/Segmentation_model_using_U-net.g
 cd Segmentation_model_using_U-net
 pip install -r requirements.txt
 ```
-
-> *Consider creating a `requirements.txt` file for reproducibility.*
 
 ---
 
