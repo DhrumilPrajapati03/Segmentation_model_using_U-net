@@ -47,11 +47,11 @@ All data were acquired from the **Sentinel-2** Earth observation mission, part o
 
 | Parameter        | Value           |
 | ---------------- | --------------- |
-| Epochs           | 50              |
+| Epochs           | 30              |
 | Batch Size       | 16              |
 | Optimizer        | Adam            |
 | Learning Rate    | 0.001           |
-| Image Size       | 128 × 128       |
+| Image Size       | 64 × 164       |
 | Loss Function    | BCE / Dice Loss |
 | Validation Split | 20%             |
 
